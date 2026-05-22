@@ -1,0 +1,55 @@
+Now that your "operating room" is set up with the Gemini CLI, it is time to tackle a real-world medical device scenario: **Automated Design Verification**.
+
+In this exercise, we are going to use the AI to act as an automated test engineer. The goal is to take a list of product requirements from an Excel sheet, verify them against your product's knowledge base in NotebookLM, and automatically generate a formal Word document containing the justification for each requirement.
+
+To do this, the AI needs to use a browser automation tool called "Playwright"—think of it as a digital robotic arm that can open web pages, click buttons, and read text for you.
+
+Here is how we will approach this exercise.
+
+---
+
+### Phase 1: Understand the Workflow
+
+Before touching the keyboard, let's look at the pipeline we are trying to build.
+
+* **Input:** An Excel sheet containing medical device requirements (e.g., "The device must operate continuously for 4 hours on battery power").
+* **Action:** The AI uses Playwright to open NotebookLM, searches your product's design specifications, and retrieves the evidence that proves the requirement is met.
+* **Output:** A formatted Microsoft Word (.docx) file for *each* requirement, detailing the justification and tracing it back to the knowledge base.
+
+### Phase 2: The "Blind" Attempt (Your Challenge)
+
+**The Goal:** Try to get the Gemini CLI to accomplish this task using only your natural intuition.
+**The Instructions:**
+
+1. Open your Gemini CLI.
+2. Write a prompt asking the AI to read your provided Excel requirements sheet, use Playwright to check NotebookLM, and write the Word documents.
+3. Press **Enter** and watch what happens.
+
+*Hint: You will likely find that the AI struggles. It might give you high-level advice, write some disjointed code, or get confused about how to format the Word document. Why? Because while the AI is incredibly smart, it does not know your company's specific Standard Operating Procedures (SOPs).*
+
+### Phase 3: The "Aha!" Moment – Introducing In-Context Training
+
+In the medical device industry, you wouldn't tell a new engineer to "just go verify the design" without giving them a Work Instruction or an SOP. The AI is exactly the same.
+
+To bridge this gap, we use **In-Context Training**.
+
+Instead of expecting the AI to guess how to use Playwright or format a Word document, we provide it with a "Skill" file (often saved as a .md or Markdown file). A skill.md is essentially a digital SOP for the AI. It contains the exact, step-by-step instructions, code snippets, and formatting rules the AI needs to flawlessly execute a complex task.
+
+### Phase 4: The Guided Attempt (Using the Skill)
+
+**The Goal:** Achieve the deliverable by providing the AI with its SOP.
+**The Instructions:**
+
+1. In your project folder, you will notice several files named skill.md (e.g., one for Playwright automation, one for Word document generation). **Do not open them yet!** We want the AI to read them, not you.
+2. Go back to your Gemini CLI.
+3. Write a new prompt, but this time, explicitly tell the AI to read and follow the instructions in those skill files.
+* *Example prompt: "Using the requirements in [Excel File Name], perform design verification against NotebookLM. Strictly follow the procedures outlined in the provided skill.md files for browser automation and document generation."*
+
+
+4. Press **Enter**.
+
+### Phase 5: Review the Output
+
+Watch as the AI transforms from a confused assistant into a precise automation tool. By feeding the AI its instructions "in context" (via the skill.md files), it now knows exactly how to drive the browser, query the knowledge base, and generate your compliance documentation.
+
+Once the AI finishes running, open the newly generated Word documents. You will see that the solution to the entire complex workflow was neatly packaged inside those skill files all along!

@@ -1,0 +1,51 @@
+# --- Project Initializer Block ---
+# Data Files (keep the folder structure but ignore content)
+data/*
+*.csv
+!data/.keep
+
+# Secrets & Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+
+# Executables
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.manifest
+.venv/
+venv/
+env/
+ENV/
+build/
+dist/
+*.spec
+
+# Node/JS
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS Generated
+.DS_Store
+Thumbs.db
+Desktop.ini
+# -----------------------------

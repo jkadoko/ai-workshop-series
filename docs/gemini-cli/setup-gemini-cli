@@ -1,0 +1,81 @@
+Welcome to the world of command-line AI! The Gemini CLI (Command Line Interface) is a powerful tool that brings Google's AI directly to your computer's terminal.
+
+Since you work in the medical device industry, think of the terminal (or command prompt) as the "operating room" of your computer. Normally, you interact with your computer using a graphical interface (buttons and windows), which is like checking a patient's chart. The command line, however, lets you give direct, precise instructions to the computer's "nervous system."
+
+The Gemini CLI acts as an intelligent assistant right there in the operating room, helping you analyze data, automate tasks, or learn new concepts without leaving your keyboard.
+
+Here is a step-by-step guide to setting up your Windows laptop from scratch.
+
+---
+
+### 1. Open Windows PowerShell
+
+**Justification:** Before installing anything, we need to access the command line interface on your Windows computer.
+**Explanation:** Windows comes with a built-in terminal called PowerShell. This is where we will type all our commands.
+
+* Click your Windows **Start menu**.
+* Type PowerShell.
+* Click on **Windows PowerShell** (or right-click and select "Run as Administrator" if prompted during later steps, though a standard window is usually fine to start). You will see a dark window with a blinking cursor.
+
+### 2. Install NVM for Windows (Node Version Manager)
+
+**Justification:** The Gemini CLI requires a foundational software called Node.js to run. NVM helps manage different versions of Node.js smoothly, preventing future conflicts if you use other tools.
+**Explanation:**
+
+* To easily install NVM on Windows, we will use a popular package manager called "winget" (which is usually built into modern Windows laptops).
+* In your PowerShell window, type the following command exactly as it appears and press **Enter**:
+winget install coreybutler.nvm-windows
+* Follow any on-screen prompts to complete the installation.
+* **Important:** Once it finishes, close your PowerShell window completely and open a new one. This refreshes the system so it recognizes the new software.
+
+### 3. Install Node.js (and NPM)
+
+**Justification:** Node.js provides the environment needed to run the Gemini CLI. It automatically comes with NPM (Node Package Manager), which is the tool we'll use to actually download the Gemini CLI software.
+**Explanation:**
+
+* In your new PowerShell window, type this command and press **Enter**:
+nvm install lts
+*(Note: "lts" stands for Long Term Support, ensuring you get the most stable, reliable version).*
+* Once it finishes downloading, tell your system to use this version by typing:
+nvm use lts
+(Press **Enter**)
+
+### 4. Install the Gemini CLI
+
+**Justification:** Now that the foundational tools are in place, we can download and install the Gemini CLI directly from the internet.
+**Explanation:**
+
+* We will use NPM (the package manager you just installed) to grab the Gemini software. The -g flag tells your computer to install it "globally," meaning you can access it from anywhere on your computer.
+* Type this command and press **Enter**:
+npm install -g @google/gemini-cli
+* It will take a few moments to download and install the files. You might see a progress bar or a list of files being extracted.
+
+### 5. Start the Gemini CLI and Sign In
+
+**Justification:** The software is installed, but it needs to know who you are and confirm you have permission to use the Google Gemini models.
+**Explanation:**
+
+* To launch the tool, simply type:
+gemini
+(Press **Enter**)
+* Because this is your first time, the CLI will prompt you to authenticate. It should automatically open a web browser window.
+* Choose "Sign in with Google" and select your Google account (this provides you with free usage quotas for the models).
+* Follow the prompts in your browser to grant access. Once successful, you can close the browser window and return to your PowerShell terminal.
+
+### 6. Submit Your First Prompt
+
+**Justification:** Now it's time to verify everything works and experience how the AI can assist you!
+**Explanation:**
+
+* You are now "inside" the Gemini CLI environment. You can talk to it naturally.
+* Let's test it with something relevant to your field. Type the following and press **Enter**:
+> Explain the importance of FDA Class II device regulations in simple terms.
+
+
+* The AI will process your request and generate a text response right there in your terminal!
+
+**You've done it!** You have successfully moved from a blank terminal to querying an advanced AI model.
+
+---
+
+*Tip: When you are finished using the Gemini CLI, you can simply type /quit or close the PowerShell window.*
