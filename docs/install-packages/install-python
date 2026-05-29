@@ -1,0 +1,43 @@
+Welcome back to the "operating room." Now that you are comfortable with the terminal, it is time to install Python—one of the most powerful and widely used programming languages in the world.
+In the medical device field, Python is incredibly useful for automating data analysis, processing large datasets from clinical trials, or testing hardware logic.
+We will install Python using the Microsoft Store. This is the safest, most reliable method for Windows users because it automatically configures your system settings in the background.
+ 1. Open the Microsoft Store
+   Justification: The Microsoft Store provides an official, verified, and automatically updating version of Python. Think of this like using an FDA-cleared software package directly from the manufacturer—it minimizes security risks and configuration errors.
+   Explanation: Click your Windows Start menu, type Microsoft Store, and press Enter to open the application.
+ 2. Search for and Install Python
+   Justification: Python comes in multiple versions. Grabbing the latest stable release ensures you have the most up-to-date tools and security features without the bugs of experimental builds.
+   Explanation:
+   In the search bar at the top of the Microsoft Store, type Python.
+   Select the most recent version (e.g., Python 3.13 or 3.14) published by the Python Software Foundation.
+   Click the Get or Install button. Wait a few moments for the download and installation to complete.
+ 3. Open Windows PowerShell
+   Justification: Just like the Gemini CLI exercise, we need a command-line interface to interact with Python. Python does not have a traditional graphical user interface with buttons; it receives instructions via text commands.
+   Explanation: Click the Windows Start menu, type PowerShell, and select Windows PowerShell.
+ 4. Verify the Installation
+   Justification: In quality assurance, you always verify that equipment is calibrated before use. We need to ensure Python is installed and properly recognized by your computer's system.
+   Explanation: In your PowerShell window, type python --version and press Enter. If the installation was successful, it will return the version number (e.g., Python 3.14.2).
+   (Note: If it opens the Microsoft Store again, close PowerShell, wait a minute for the background installation to finish, and try again).
+ 5. Write Your First Script in Notepad
+   Justification: A Python "script" is simply a plain text file containing instructions. We use a basic editor like Notepad because word processors like Microsoft Word add hidden formatting (like fonts and margins) that confuse the computer.
+   Explanation:
+   Open the Windows Start menu, type Notepad, and press Enter.
+   In the blank document, type the following exact line:
+   print("Design verification complete. Python is running!")
+   This print command tells Python to display the text inside the quotation marks back to you.
+ 6. Save Your Python File
+   Justification: The file must be saved with a .py extension so the operating system knows it contains Python code, not just regular text.
+   Explanation:
+   In Notepad, click File > Save As.
+   Choose a location that is easy to find, like your Desktop.
+   In the "File name" box, type test_script.py.
+   In the "Save as type" dropdown, select All Files (this critical step prevents Notepad from accidentally saving it as a .txt text file).
+   Click Save.
+ 7. Execute the Script (The Drag-and-Drop Method)
+   Justification: Now it is time to execute your written procedure. The terminal needs to know exactly where your file lives on the hard drive. Typing out file paths can be error-prone, so we will use a foolproof visual shortcut.
+   Explanation:
+   Go back to your PowerShell window.
+   Type python  (make sure to include a single space after the word python). Do not press Enter yet!
+   Find your test_script.py file on your Desktop.
+   Click and drag the file icon directly into the PowerShell window and let go. PowerShell will automatically type out the exact, perfect file path for you.
+   Press Enter.
+You should immediately see your message, "Design verification complete. Python is running!", printed directly in the terminal. You have successfully written and executed your first piece of software!
