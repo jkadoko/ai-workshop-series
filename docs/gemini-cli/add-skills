@@ -1,0 +1,21 @@
+# Module: Introduction to Agentic Workflows & Building Your First Skill
+Welcome! If you are transitioning into the world of Artificial Intelligence (AI), you have likely used chat interfaces to ask questions and get answers. Today, we are moving beyond simple chat into **Agentic Workflows**.
+In this exercise, we will break down what these workflows are, why they are critical for maintaining compliance in strict environments (like medical device engineering or biotech research), and how to build a basic "Skill" for the Gemini Command Line Interface (CLI).
+## Part 1: Decoding the Terminology
+Before we build anything, let's clarify the core concepts.
+ * **Agentic Workflow:** Traditional AI usage is a simple back-and-forth conversation. An *agentic workflow* is a process where the AI is given a goal and autonomously plans, utilizes tools, and executes a multi-step sequence to achieve that goal. It acts as a digital "agent" working on your behalf.
+ * **Agent Skills:** Think of a skill as a Standard Operating Procedure (SOP) packaged specifically for an AI. It is a set of instructions—usually just a simple text or markdown file—that teaches the AI exactly how to handle a highly specific, repeatable task, ensuring it behaves consistently every time.
+ * **Tools & Model Context Protocol (MCP):** A "tool" is what allows the AI to interact with the outside world (e.g., reading a database, searching the web, or analyzing a file). The **Model Context Protocol (MCP)** is an open-source standard—think of it as a universal plug—that standardizes how AI systems securely connect to these external tools and data sources without requiring custom, complex programming.
+## Part 2: Why Skills Matter in Regulated Industries
+When working in domains that require rigorous documentation and safety standards, you cannot afford for an AI to be "creative" with your compliance processes.
+Using an AI without defined skills is like hiring a brilliant intern but refusing to give them any training manuals. By defining Agent Skills, you provide rigid guardrails. This ensures the AI follows the exact same methodology whether it is formatting a regulatory submission, compiling a biotech research report, or validating engineering parameters.
+## Part 3: Real-World Examples of Agent Skills
+To see how industry professionals structure these, we can look at public repositories like the **Anthropic GitHub repository for skills** (anthropics/skills). These repositories act as open libraries of pre-built SOPs for AI agents. Common categories include:
+ * **Document Skills:** Instructions that force the AI to output data strictly into standardized templates, ensuring uniformity across teams and audits.
+ * **Review Skills:** Workflows designed to scan code, datasets, or technical writing for specific criteria without hallucinating outside information.
+ * **Tool Integration Skills (via MCP):** Skills that utilize MCP servers to securely query an internal Quality Management System (QMS) or read from a local secure directory, ensuring the AI only accesses authorized data.
+## Part 4: Hands-On Exercise — Adding a Skill to the Gemini CLI
+There are 3 levels of skills, namely, Enterprise, User, and Project. Enterprise level skills are set by your organization and they're priorized. User level skills apply to all projects and are installed at the home directory. Project skills are limited to a single project.
+**Review Gemini CLI** documentation online:  Gemini CLI documentation | Gemini CLI https://share.google/mISI6QoVY5Wc6jG4b
+**Identify** location of the skills folder 
+**Move** your newly minted or downloaded skill files to the user-level skills
