@@ -1,6 +1,6 @@
 # Project
 
-The goal of this project is training material for working professionals in a variety of industries, with a focus on medical devices and biotech. The training materials will be delivered in the form of workshops and online documentation.
+Training material for working professionals, with a focus on regulated industries. The training materials will be delivered in the form of in person or online workshops.
 
 ## Structure
 - `.agent/`: Agent context (spec, memory, rules).
