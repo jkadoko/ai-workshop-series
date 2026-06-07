@@ -9,6 +9,9 @@ In the medical device field, Python is incredibly useful for:
 - Processing large datasets from clinical trials
 - Testing hardware logic
 
+> **Why Python for Regulated Industries?**
+> Python is the dominant language in data science, automation, and AI—all areas where regulated industries are rapidly adopting new workflows. Unlike proprietary tools (e.g., MATLAB, LabVIEW), Python is open-source, meaning your processes are transparent and auditable. The FDA's own Center for Devices and Radiological Health (CDRH) uses Python-based tools in its regulatory science programs. Learning Python is not just a technical skill—it is a strategic investment in your career.
+
 We will install Python using the Microsoft Store. This is the safest, most reliable method for Windows users because it automatically configures your system settings in the background.
 
 ---
@@ -40,7 +43,7 @@ We will install Python using the Microsoft Store. This is the safest, most relia
 
 ### 3. Open Windows PowerShell
 
-**Justification:** Just like the Gemini CLI exercise, we need a command-line interface to interact with Python. Python does not have a traditional graphical user interface with buttons; it receives commands through the terminal.
+**Justification:** Just like the Antigravity CLI exercise, we need a command-line interface to interact with Python. Python does not have a traditional graphical user interface with buttons; it receives commands through the terminal.
 
 **Steps:**
 1. Click the Windows Start menu
@@ -119,3 +122,17 @@ Design verification complete. Python is running!
 ```
 
 printed directly in the terminal. You have successfully written and executed your first piece of software!
+
+---
+
+## ✅ Verification Checkpoint
+
+Before moving on, confirm the following:
+
+| Check | How to Verify | Expected Result |
+|-------|--------------|----------------|
+| Python installed | `python --version` | Version number (e.g., `Python 3.14.2`) |
+| Script executed | Run `test_script.py` | Message printed in terminal |
+| Path configured | Python runs from any directory | No "command not found" errors |
+
+If all checks pass, you are ready for **Module 2: Python Package Management (pip)**.
